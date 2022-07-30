@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Nav() {
   return (
-    <>
+    <div className='bg-white'>
       <div className='flex flex-row justify-between mx-6 font-[14px] my-6'>
         <div className='flex flex-row gap-4'>
           <h3 className='font-bold mx-4 py-3 px-4 rounded-lg text-violet-400'>Estate World</h3>
@@ -14,6 +14,6 @@ export default function Nav() {
         </div>
       </div>
       <hr/>
-    </>
+    </div>
   )
 }

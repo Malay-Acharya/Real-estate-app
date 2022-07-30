@@ -5,7 +5,7 @@ import CardArray from './Cards/CardArray'
 
 export default function Main() {
   return (
-    <div className='mx-44 my-20'>
+    <div className='mx-44 py-14'>
       <Search/>
       <Filterbar/>
       <CardArray/>
