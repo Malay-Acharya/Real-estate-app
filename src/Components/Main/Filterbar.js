@@ -4,7 +4,7 @@ import MultiRangeSlider from 'react-js-multi-range-sliders';
 export default function Filterbar() {
   return (
     <>
-      <form className="flex my-8 bg-white rounded-xl p-8 justify-around" onSubmit={(e)=>{
+      <form className="h-30 flex my-8 bg-white rounded-xl p-8 justify-around" onSubmit={(e)=>{
           e.preventDefault();
           console.log("Submitted");
         }}>
@@ -29,7 +29,7 @@ export default function Filterbar() {
                 onChange={({ min, max }) => console.log(`min = ${min}, max = ${max}`)}
               />
           </div>
-          <div className='h-82 w-0.5 mx-4 bg-violet-100 '></div>
+          <div className='h-18 w-0.5 mx-4 bg-violet-100 '></div>
           <div className='flex flex-col pr-8 '>
             <label className='pl-1'>Property type</label>
             <select name="housetype" className='py-3'>
@@ -39,7 +39,7 @@ export default function Filterbar() {
               <option value="penthouse">Penthouse</option>
             </select>
           </div>
-          <div className='h-82 w-0.5 mx-4 bg-violet-100 '></div>
+          <div className='h-18 w-0.5 mx-4 bg-violet-100 '></div>
           <button className="bg-violet-600 text-white px-12 rounded-lg ml-8">Search</button>
       </form>
     </>
